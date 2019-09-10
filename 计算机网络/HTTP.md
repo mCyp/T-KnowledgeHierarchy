@@ -43,7 +43,7 @@
 |   名称   |                             图片                             |
 | :------: | :----------------------------------------------------------: |
 | 请求报文 | ![请求报文](https://teaof-konwleadge-1255982134.cos.ap-shanghai.myqcloud.com/blog/%E7%BD%91%E7%BB%9C/HTTP/%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87.png) |
-| 响应报文 | ![响应报文](https://teaof-konwleadge-1255982134.cos.ap-shanghai.myqcloud.com/blog/%E7%BD%91%E7%BB%9C/HTTP/%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87%E7%BB%93%E6%9E%84.png) |
+| 响应报文 | ![响应报文](https://teaof-konwleadge-1255982134.cos.ap-shanghai.myqcloud.com/blog/网络/HTTP/响应报文.png) |
 
 对于小白来说，这张可能还是不懂，这两张总清晰点了吧😏：
 
