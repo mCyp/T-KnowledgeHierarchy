@@ -14,7 +14,7 @@
 
 ### 二、 [网络基础](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/计算机网络/计算机网络.md)
 
-### 三、 [Java基础]()
+### 三、 Java基础
 
-### 四、 Android
+### 四、[ Android](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android.md)
 

@@ -102,7 +102,45 @@ HTTP头部存放着HTTP报文的重要信息
 
 ##### 通用首部字段
 
+| 名称              | 作用                       |
+| ----------------- | -------------------------- |
+| Cache-Control     | 控制缓存的行为             |
+| Connection        | 逐跳首部，连接管理         |
+| Date              | 创建报文的日期时间         |
+| Pragma            | 报文指令                   |
+| Trailer           | 报文末端的首部一览         |
+| Transfer-Encoding | 指定报文主体的传输编码方式 |
+| Upgrade           | 升级为其他协议             |
+| Via               | 代理服务器的相关信息       |
+| Warning           | 错误通知                   |
+
+最常见的应该就是`Cache-Control`了
+
 ##### 请求首部字段
+
+| 名称                | 作用                                          |
+| ------------------- | --------------------------------------------- |
+| Accept              | 用户代理可处理的类型                          |
+| Accept-Charset      | 优先的字符集                                  |
+| Accept-Encoding     | 优先的编码方式                                |
+| Accept-Language     | 优先的语言（自然语言）                        |
+| Authorization       | web认证信息                                   |
+| Expect              | 期待服务器的特定行为                          |
+| From                | 用户的电子邮箱地址                            |
+| Host                | 请求资源的所在服务器                          |
+| If-Match            | 比较实体标记（ETag）                          |
+| If-Modified-Match   | 比较资源的更新时间                            |
+| If-None-Match       | 比较实体标记（与If-Match相反）                |
+| If-Range            | 资源未更新时发送实体Byte的范围请求            |
+| If-Unmodified-Since | 比价资源的更新时间（与If-Modified-Match相反） |
+| Max-Forwards        | 最大传输跳数                                  |
+| Proxy-Authorization | 代理服务器要求客户端的认证信息                |
+| Range               | 实体的字节范围请求                            |
+| Refer               | 队请求中URI的原始获取方                       |
+| TE                  | 传输编码的优先级                              |
+| User-Agent          | HTTP客户端程序的信息                          |
+
+
 
 ##### 响应首部字段
 
