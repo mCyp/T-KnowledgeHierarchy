@@ -144,19 +144,32 @@ HTTP头部存放着HTTP报文的重要信息
 
 ##### 响应首部字段
 
-| 名称 | 作用 |
-| ---- | ---- |
-|      |      |
-
-
+| 名称                | 作用                         |
+| ------------------- | ---------------------------- |
+| Accept-Ranges       | 是否接受字节范围请求         |
+| Age                 | 推算资源创建的时间           |
+| ETag                | 资源的匹配时间               |
+| Location            | 令客户端重定向至指定的URI    |
+| Proxy-Authenticatie | 代理服务器对客户端的认证信息 |
+| Retry-After         | 对再次发起请求的时机要求     |
+| Server              | HTTP服务器的安装信息         |
+| Vary                | 代理服务器缓存的管理信息     |
+| WWW-Authenticate    | 服务器对客户端的认证信息     |
 
 ##### 实体首部字段
 
-| 名称 | 作用 |
-| ---- | ---- |
-|      |      |
-
-
+| 名称             | 作用                   |
+| ---------------- | ---------------------- |
+| Allow            | 资源可支持的HTTP方法   |
+| Content-Encoding | 实体主体适用的编码方式 |
+| Content-Language | 实体主体的自然语言     |
+| Content-Length   | 实体主题的大小         |
+| Content-Location | 替代对应资源的URI      |
+| Content-MD5      | 实体主体的报文摘要     |
+| Content-Range    | 实体主题的位置范围     |
+| Content-Type     | 实体主体的媒体类型     |
+| Expires          | 实体主体的过期时间     |
+| Last-Modified    | 资源的最后修改日期时间 |
 
 #### 3.3 实体
 
