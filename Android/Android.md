@@ -20,7 +20,9 @@
 
 > 第一篇：[《抽丝剥茧RecyclerView - 化整为零》](https://juejin.im/post/5d4fd7576fb9a06afa327930)
 >
-> 第二篇：[《抽丝剥茧RecyclerView - LayoutManager》](https://juejin.im/post/5d6310975188256ec01d8418)
+> 第二篇：[《抽丝剥茧RecyclerView - LayoutManager》](https://juejin.im/post/5d6310975188256ec01d8418)  
+>
+> 第三篇：[抽丝剥茧RecyclerView - ItemAnimator & Adapter](https://juejin.im/post/5d7f8f2ae51d4561a54b6a5d)
 
 > 特别篇：[《GridLayoutManager这么用，你可能还真没尝试过》](https://juejin.im/post/5d6c871b518825168d37ceb9)
 
