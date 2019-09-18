@@ -18,3 +18,12 @@
 
 ### 四、[ Android](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android.md)
 
+## 计划进行
+
+- [ ] 极客专栏：《Android开发高手课》每周四课
+- [ ] 书籍：《图解HTTP》 计划完成时间 9月20号
+- [ ] 书籍：《深入理解java虚拟机JYM》每天中午半个小时 【暂停】
+- [ ] 学习Java注解 学习一个例子
+- [ ] Orient - UI 简单的时间轴 9.22前 发布第一版本
+- [ ] Orient - Template 下周之前
+
