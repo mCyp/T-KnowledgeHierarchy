@@ -183,7 +183,41 @@ HTTP头部存放着HTTP报文的重要信息
 
 ## 三、长连接
 
-## 四、知识点
+## 四、更加安全的HTTPS 
+
+HTTP虽然非常优秀，但是它也有一些缺点：
+
+- 通信使用明文，内容可能会被窃听
+- 不能验证对方身份，可能遭遇伪装
+- 无法证明报文的完整性，报文可能会被篡改
+
+### 1. HTTPS
+
+#### 1.1 HTTPS介绍
+
+由于HTTP协议中没有加密机制，但可以通过SSL（Secure Secoket Layer，安全套接层）或TLS（Transport Layer Security，安全层传输协议，基于SSL）添加了加密及认证机制的HTTP称为HTTPS(HTTP Secure)的组合协议，加密HTTP通信内容，**与SSL组合使用的HTTP被称为HTTPS（HTTP Secure，超文本传输安全协议）或HTTP over SSL**。
+
+**HTTPS = HTTP + 加密 + 认证 + 完整性保护**
+
+#### 1.2 HTTP原理
+
+HTTPS并非是应用层新的协议，而是HTTP通信接口部分用SSL和TLS协议代替而已。
+
+通常，HTTP直接和TCP通信，当使用SSL的时候，则演变成先和SSL通信，接着，再由SSL和HTTP通信了。
+
+<img src="https://teaof-konwleadge-1255982134.cos.ap-shanghai.myqcloud.com/blog/%E7%BD%91%E7%BB%9C/HTTP/HTTPS%E4%BD%9C%E7%94%A8%E5%8E%9F%E7%90%86.png" alt="HTTP" style="zoom:50%;" />
+
+#### 1.3 HTTPS缺点
+
+**速度慢**
+
+与HTTP相比，虽然HTTPS的安全性提高了，但是速度降低了，一般情况下，HTTPS会比HTTP慢2-100倍，究其原因，主要是SSL通信慢并且大量消耗CPU和内存资源，导致处理速度慢。
+
+**证书价格略贵**
+
+要进行HTTPS通信，证书是不可少的，每年的费用大概是600软妹币，对于个人网站而言并不是特别划算
+
+## 五、知识点
 
 ### 1. WEB服务器相关
 
