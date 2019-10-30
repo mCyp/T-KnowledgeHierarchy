@@ -2,6 +2,10 @@
 
 ## 应用层
 
+### 1. 协议
+
+#### # HTTP
+
 ## 表示层
 
 ## 会话层
@@ -26,12 +30,16 @@ UDP（User Datagram Protocal）称为用户数据包协议，是一个简单的�
 
 ![UDP报文结构](https://teaof-konwleadge-1255982134.cos.ap-shanghai.myqcloud.com/blog/%E7%BD%91%E7%BB%9C/OSI/UDP%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F.jpg)
 
+- 源端口号
+- 目的端口
+
 ##### ## 特点
 
 UDP的特点：
 
 - 无连接：不管对方有没有收到
 - 不安全：可以给任何人传输数据，任何人也可以给它发送数据
+- 基于数据包
 - 不会根据网络状态更改状态
 
 ##### ## 场景
@@ -50,7 +58,12 @@ TCP（Transmission Control Protocol）称为**传输控制协议**，是一种�
 
 - 序号：实现报文的有序控制
 - 确认序号：确认当前收到数据
-- 状态码的解释
+- URG：
+- ACK:
+- PSH:
+- RST:
+- SYN：同步信号
+- FIN：终止信号
 
 ##### ## 特点
 
