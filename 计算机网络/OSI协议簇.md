@@ -16,21 +16,13 @@
 
 #### # HTTP
 
-HTTP（HyperText Transfer Protocal）超文本传输协议，这是一个即使不是相关专业出身也能叫的出名字的协议了，关于更加详细的介绍，请移步我阅读完《图解HTTP》所做的笔记：
+HTTP（HyperText Transfer Protocal）是超文本传输协议的缩写，这是一个即使不是相关专业出身也能叫的出名字的协议了，关于更加详细的介绍，请移步我阅读完《图解HTTP》所做的笔记：
 
 > [《HTTP》]([https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP.md](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/计算机网络/HTTP.md))
 
-#### # RTMP
+#### # DNS
 
-RTMP（Real Time Message Protocol）是实时信息传输协议的缩写，它是由Adobe公司提出的应用层的协议，用来解决多媒体数据传输时的多路复用和分包协议。
-
-**关键词**：RTMP握手、Chunk分包
-
-如果想对RTMP协议进一步了解，可以阅读：
-
-> [《带你吃透RTMP》]([https://mingyangshang.github.io/2016/03/06/RTMP%E5%8D%8F%E8%AE%AE/](https://mingyangshang.github.io/2016/03/06/RTMP协议/))
->
-> [《直播推流实现RTMP协议的一些注意事项》](https://www.jianshu.com/p/00aceabce944)
+DNS（Domin Name System）是域名解析协议的缩写，该协议的作用就是将域名转化为IP地址。想要弄懂DNS，
 
 #### # FTP
 
@@ -48,11 +40,35 @@ RTMP（Real Time Message Protocol）是实时信息传输协议的缩写，它�
 
  **P2P**（Peer to Peer）是点对点协议的缩写，是无中心服务器依靠用户群（peers）交互信息的互联网协议，它的作用在于减少以上网络传输中的节点，以降低资料遗失的风险。
 
-种子文件的使用
+简单来说一次是P2P的工作原理：
 
-#### # DHT
+1. 资源没有集中的存储在某些设备上，而是分散的放在一些设备上，这些设备被称为Peer。
+2. 如需下载文件，你可以和那些已经存在资源的Peer，建立点对点的连接，下载完文件以后，你也就成功的称为Peer。
 
-去中心网络协议
+在我们生活中，比较常见的是种子文件（.torrent）,种子文件包括两个部分：
+
+- announce（tracker URL）：通过该路径去请求tracker服务器从而了解到哪些Peer可以下载文件。
+- 文件信息
+
+可以看到的是：**即使没有中心服务器，P2P协议仍然需要tracker服务器去了解哪些Peer可以下载文件资源，一旦tracker服务器出现故障，P2P就无法工作。**
+
+为了解决上述存在的问题，引入了DHT（去中心化网络），大致的原理就是每个Peer除了要保存一些资源文件以外，还需要记录一些文件的索引，比如说我是A电脑，里面有文件1，2，索引则是文件6、7可以通过电脑B、E获取。
+
+如需进一步了解，可翻阅：
+
+> [《P2P中DHT网络介绍》](https://blog.csdn.net/mergerly/article/details/7989281)
+
+#### # RTMP
+
+RTMP（Real Time Message Protocol）是实时信息传输协议的缩写，它是由Adobe公司提出的应用层的协议，用来解决多媒体数据传输时的多路复用和分包协议。
+
+**关键词**：RTMP握手、Chunk分包
+
+如果想对RTMP协议进一步了解，可以阅读：
+
+> [《带你吃透RTMP》]([https://mingyangshang.github.io/2016/03/06/RTMP%E5%8D%8F%E8%AE%AE/](https://mingyangshang.github.io/2016/03/06/RTMP协议/))
+>
+> [《直播推流实现RTMP协议的一些注意事项》](https://www.jianshu.com/p/00aceabce944)
 
 ## 表示层
 
