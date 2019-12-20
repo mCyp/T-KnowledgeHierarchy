@@ -161,6 +161,40 @@
 
 每个绑定智能包含单个表达式。
 
+## 三、基础
+
+### 1.事件处理
+
+#### # 事件修饰符
+
+Vue.js为`v-on`提供修饰符，修饰符是以点开头的指令后缀表示的。时间的处理顺序是由内到外的。
+
+```vue
+<!-- 阻止单机事件的继续传播 -->
+<a v-on:click.steop="doThis"></a>
+
+<!-- 提交事件不再重载页面 -->
+<el-button @click.prevent="handleClick(count,$event)">我是新的按钮C</el-button>
+
+<!-- 修饰符可以串联 -->
+<el-button  @click.stop.prevent="showWhat = 'B'" round>A</el-button>
+
+<!-- 内部元素触发的事件先在次处理，然后才交由内部处理 -->
+<div id="app" @click.capture="handleOuterClick">
+		<!-- ... -->
+</div>
+
+<!-- 只有Event.target是自身的时候才会处理 -->
+<el-button @click.self="handleClick(count,$event)"按钮C</el-button>
+
+<!-- vue 2.14新增，只会触发一次 -->
+<div id="app" @click.once="handleOuterClick">
+  <!-- ... -->
+</div>
+```
+
+除了上述的一些事件修饰符以外，vue还提供了绝大多数常用的按键码的别名。
+
 ## 三、组件
 
 #### # Prop大小写
@@ -171,9 +205,17 @@
 
 #### # 传递静态或者动态的Prop
 
+传递常量就是静态过程，传递变量就是动态的过程
+
 #### # 数据流
 
 所有的prop都使得其父子prop之间形成了一个单向下行绑定
+
+## 四、进阶
+
+#### # 自定义指令
+
+
 
 ## 小技巧
 
