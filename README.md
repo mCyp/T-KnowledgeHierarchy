@@ -12,11 +12,31 @@
 
  #### ☕️  JAVA
 
-#### 🤖  Android
+### 🤖  Android
+
+#### 基础
 
 - [四大组件基础]()
+- ConstraintLayout
+- 事件分发
+- 自定义View
+- 动画
+- Handler
+- Asynctask
+- 消息队列
 
-#### ⚡️  网络 
+#### 进阶
 
-#### 🖥  计算机
+- 源码分析
+- 单元测试
+- 性能优化
+- Binder、AIDL、进程
+
+### ⚡️  网络
+
+- HTTP 
+- TCP
+- 移动网络发送的一般过程 
+
+### 🖥  计算机
 
