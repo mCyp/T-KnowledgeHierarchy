@@ -16,7 +16,7 @@
 
 #### 基础
 
-- [四大组件基础]([https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6.md](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android四大组件.md))
+- [四大组件基础](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android四大组件.md)
 - ConstraintLayout
 - 事件分发
 - 自定义View
