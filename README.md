@@ -17,11 +17,12 @@
 #### 基础
 
 - [四大组件基础](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Android四大组件.md)
-- ConstraintLayout
+- [Intent](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Intent.md)
+- [ConstraintLayout](https://www.jianshu.com/p/958887ed4f5f)
 - 事件分发
 - 自定义View
 - 动画
-- Handler
+- [Handler](https://github.com/mCyp/T-KnowledgeHierarchy/blob/master/Android/Handler.md)
 - Asynctask
 - 消息队列
 
