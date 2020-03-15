@@ -80,7 +80,7 @@ Activity的启动模式一般在AndroidManifest的Activity中的launchMode属性
 
 - Standard：标准模式。如果不设置，默认就是标准模式，每次都会重新创建一个新的实例
 - SingleTop：栈顶复用。如果Activity处于活动栈的栈顶，那么再次生成一个新的Activity不会被重新创建，`#onNewIntent`方法也会被触发。
-- SingleTask：站内复用，假设一个Activity栈为：ABCD，D为栈顶，这个时候再次跳转到Activity A，则不会创建新的Activity A，Activity A的`#onNewIntent`会被重新调用，Activity BCD则会出栈，所以此时的Activity栈为：A。
+- SingleTask：栈内复用，假设一个Activity栈为：ABCD，D为栈顶，这个时候再次跳转到Activity A，则不会创建新的Activity A，Activity A的`#onNewIntent`会被重新调用，Activity BCD则会出栈，所以此时的Activity栈为：A。
 - SingleInstance：单实例模式，顾名思义，一个栈中只会有一个实例，如果打开SingleInstance的Activity，则会重新创建一个栈，并在该栈中只会创建一个新的实例。
 
 推荐阅读Blog：[《一篇文章搞懂 Activity 启动模式》](https://juejin.im/post/5c6fce04f265da2d943f6641#comment)，图不错，有助于理解，不过文章的最后一部分不对，至少验证的不对~
